@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>JavaScript</title>
+<!-- Сценарий на языке JavaScript для HTML 4.01 -->
+<!-- На HTML 5, атрибут type указывать не обязательно -->
+<script type="text/javascript">
+
+    function alerted(){
+var now = new Date().toLocaleDateString().slice(3);
+alert('Текущий месяц и год: '+ now );
+}
+
+ </script>
+ </head>
+ <body>
+ <h1>Привет JavaScript!</h1>
+ <!-- Сценарий на языке JavaScript для HTML 4.01 -->
+ <button onclick="alerted()">Показать год</button>
+
+ <script type="text/javascript">
+
+for(i=0;i<10;i++)
+{
+    alert("Привет, мир")
+}
+
+arr = new Array();
+const min = arr => arr.reduce((x, y) => Math.min(x, y));
+const max = arr => arr.reduce((x, y) => Math.max(x, y));
+for (i = 0; i < 5; i ++) { // перебираем элементы
+    arr[i] =  Math.floor(Math.random() * 100); 
+    // заполняем с помощью метода _.random() из библиотеки Lodash.
+  }
+  alert(arr+" Min: "+ min(arr)+" "+"Max: "+max(arr));
+ 
+
+ </script>
+
+ <script src="Z4.js"></script>
+ <button onclick="f()">Расчитать функцию</button>
+
+ <script type="text/javascript">
+
+    var s1 ="Я родился в Гродно";
+    var s2 ="Я - будущий программист";
+    alert('Размер строки s2: '+s2.length);
+    alert("5-ый символ в строке s1: "+s1[5]+" В ASCII: "+s1.charCodeAt(5))
+    alert(s1);
+    for(i=0;i<s1.length;i++)
+    {
+        s1=s1.replace('о','@')
+    }
+    alert(s1)
+
+ </script>  
+ </body>    
+</html>
